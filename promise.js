@@ -19,7 +19,7 @@ funnyYou.then(function(value){
 });
 
 
-// let's fetch some data guys i know this easy but i am trying to undestand some basics here so ...
+// let's fetch some data guys i know it's easy but i am trying to undestand some basics here so ...
 
 /*
 * API GENERATOR: https://randomuser.me/
