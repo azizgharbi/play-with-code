@@ -11,13 +11,10 @@ async function giveMeFreedom(){
 	try{
 
 		const response = await fetchData();
-
 		return response;
   
 	}catch(e){
-
 		console.error(e);
-
 	}
 }
 
