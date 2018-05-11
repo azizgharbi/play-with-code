@@ -2,7 +2,7 @@
 var axios = require("axios");
 
 var  funnyYou = new Promise(function(resolve, reject) {
-  	let choc = false;
+  	let choc = true;
   	if(choc){
   		resolve(100);
   	}else{
@@ -34,10 +34,7 @@ var hereSomeData = new Promise(function (resolve,reject) {
 		}).catch(function(error){
 				reject("fuck you link est pas bon malade");
 		})
-
   	})
-
-
 
 hereSomeData.then(function(value){
 	console.log(value);
@@ -51,6 +48,10 @@ hereSomeData.then(function(value){
 	console.log(error);
 })
 
+/** Wanna see somthing awesome :D ok look at this */
 
+const love = Promise.all([funnyYou,hereSomeData],function(values){
+	console.log(values);
+})
 
 		
