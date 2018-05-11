@@ -1,0 +1,56 @@
+
+var axios = require("axios");
+
+var  funnyYou = new Promise(function(resolve, reject) {
+  	let choc = false;
+  	if(choc){
+  		resolve(100);
+  	}else{
+  		reject("hey dude this not funny");
+  	}
+});
+
+//call My promise funny function 
+
+funnyYou.then(function(value){
+	console.log(value)
+}).catch(function(error) {
+	console.log(error)
+});
+
+
+// let's fetch some data guys i know this easy but i am trying to undestand some basics here so ...
+
+/*
+* API GENERATOR: https://randomuser.me/
+* SERVICE: https://randomuser.me/api/
+*/
+
+var hereSomeData = new Promise(function (resolve,reject) {
+			
+	axios.get('https://randomue/api/?gender=female')
+  			.then(function (response) {
+    			resolve(response.data.results);
+		}).catch(function(error){
+				reject("fuck you link est pas bon malade");
+		})
+
+  	})
+
+
+
+hereSomeData.then(function(value){
+	console.log(value);
+	return "boom";
+}).then(function(response) {
+	console.log("one" + response)
+	return "mais non MR been";
+}).then(function(response){
+	console.log("two" + response);
+}).catch(function(error){
+	console.log(error);
+})
+
+
+
+		
