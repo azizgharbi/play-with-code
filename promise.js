@@ -28,7 +28,7 @@ funnyYou.then(function(value){
 
 var hereSomeData = new Promise(function (resolve,reject) {
 			
-	axios.get('https://randomue/api/?gender=female')
+	axios.get('https://randomuser.me/api/?gender=female')
   			.then(function (response) {
     			resolve(response.data.results);
 		}).catch(function(error){
@@ -41,12 +41,12 @@ var hereSomeData = new Promise(function (resolve,reject) {
 
 hereSomeData.then(function(value){
 	console.log(value);
-	return "boom";
+	return "maybe u're alright";
 }).then(function(response) {
-	console.log("one" + response)
-	return "mais non MR been";
+	console.log("one: " + response)
+	return "oh really?";
 }).then(function(response){
-	console.log("two" + response);
+	console.log("two: " + response);
 }).catch(function(error){
 	console.log(error);
 })
