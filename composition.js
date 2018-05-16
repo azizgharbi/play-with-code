@@ -29,6 +29,7 @@
   const jhon = createEmployee("john", "doe", 123);
 
   const dave = createPerson("dave ","leblanc");
+  
 
   console.log( jhon.getInfo() );// Hi i am john doe
   console.log( jhon.getId() ); // Hi my employee id is 123
