@@ -18,6 +18,8 @@ const catty = Object.create(cat);
 
 cat.sound();
 
+
+
 console.log(animals.isPrototypeOf(catty));
 console.log(cat.isPrototypeOf(catty));
 
