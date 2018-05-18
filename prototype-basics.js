@@ -8,7 +8,12 @@ const cat = {
     voice : "miaaaw"
 }
 
+//let 's creat an object extend form animals
+
 Object.setPrototypeOf(cat,animals);
+
+// create an Object from cat who extend from animals
+
 const catty = Object.create(cat);
 
 cat.sound();
