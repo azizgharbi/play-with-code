@@ -23,9 +23,6 @@ dave.init("David");
 
 //aron.init("Aron");
 
-
-
-
 dave.myName = function(){
     console.log("OHHH REALLY OMG " + this.name);
 }

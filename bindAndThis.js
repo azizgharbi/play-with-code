@@ -9,7 +9,7 @@ var food = {
 
 const banana = food.getFood;
 
-var bananaGetType = banana.bind(food); 
+var bananaGetType = banana.bind(food);
 
 
 var Validator = {
