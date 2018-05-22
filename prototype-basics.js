@@ -19,6 +19,9 @@ const catty = Object.create(cat);
 cat.sound();
 
 
+catty.sound = function(){
+        console.log("MOUOUOUOU " + this.voice);
+    }
 
 console.log(animals.isPrototypeOf(catty));
 console.log(cat.isPrototypeOf(catty));

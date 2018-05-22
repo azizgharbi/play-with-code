@@ -25,6 +25,7 @@ const dog = new animalsClass("hop hop");
 const happyDog = new happyAnimalsClass("happy hop hop","not a hapy voice");
 
 happyDog.getVoice();
+
 happyDog.getHappyVoice();
 
 //dog.getVoice();
