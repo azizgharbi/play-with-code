@@ -27,4 +27,14 @@ for (let index = 0; index < hello.length; index++) {
 
 }
 
-console.log("apple,cherry,coco".split(",").map(el => el + " < 3 ").join("+ ").concat(" = fruits".concat(" love".toUpperCase())));
+//console.log("apple,cherry,coco".split(",").map(el => el + " < 3 ").join("+ ").concat(" = fruits".concat(" love".toUpperCase())));
+
+const arrayOfNumbers = [2,5,6,7,8];
+
+const arrayOfNumbers2 = [45,666,677,433]
+
+const MaxFromArrays = Math.max(...arrayOfNumbers.concat(arrayOfNumbers2));
+
+ arrayOfNumbers2.push(...arrayOfNumbers)
+
+console.log(arrayOfNumbers2);
