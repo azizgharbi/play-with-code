@@ -9,8 +9,8 @@
     return "Hi i am " + firstName + "" + lastName;
   }
 
-  function getId(empid){
-    return "Hi my employee id is " + empid;
+  function getId(id){
+    return "Hi my employee id is " + id;
   }
 
   function createPerson(firstName,lastName){
@@ -19,9 +19,9 @@
     };
   }
    
-  function createEmployee(firstName, lastName, empid){
+  function createEmployee(firstName, lastName, id){
     return {
-      getId : () => {return getId(empid)},
+      getId : () => {return getId(id)},
       getInfo: () => { return getInfo(firstName, lastName)} 
     };
   }
