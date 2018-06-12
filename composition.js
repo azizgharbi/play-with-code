@@ -15,14 +15,14 @@
 
   function createPerson(firstName,lastName){
     return {
-      getInfo: function(){ return getInfo(firstName, lastName)} 
+      getInfo: ()=> { return getInfo(firstName, lastName)} 
     };
   }
    
   function createEmployee(firstName, lastName, empid){
     return {
-      getId : function(){ return getId(empid);},
-      getInfo: function(){ return getInfo(firstName, lastName);} 
+      getId : () => {return getId(empid)},
+      getInfo: () => { return getInfo(firstName, lastName)} 
     };
   }
 
