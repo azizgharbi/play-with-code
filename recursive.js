@@ -17,7 +17,19 @@ function search(arr, num, i = 0) {
   return find ? true : false;
 }
 
-search([1, 55, 88, 9, 4], 4); //?
+function search2(arr, num) {
+  if (arr.length === 0) return false;
+  var [f, ...r] = arr;
+  return f === num || search2(r, num);
+}
+
+search2([1, 55, 88, 9, 4], 88); //?
+
+function exponent(num, exp) {
+  return exp === 0 ? 1 : num * exponent(num, exp - 1);
+}
+
+exponent(3, 2); //?
 
 /**
  *  Exercice 1
