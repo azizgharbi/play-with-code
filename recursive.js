@@ -180,3 +180,31 @@ const total = (arr, num) => {
 
 console.log(total([1, 2, 3], 4));
 console.log(total([1, 3, 5], 8));
+
+/*
+ * Exercice 3 : get value from an object using and array
+ */
+
+let obj = [
+  {
+    testKeyOne: "one",
+    testKeyTwo: "two"
+  },
+  {
+    testKeyThree: "three",
+    testKeyFour: "four",
+    testKeyFive: {
+      testKeyFiveAndAHalf: "5.5",
+      testKeyFiveAndThreeQuarters: "5.75"
+    }
+  }
+];
+
+let array = [1, "testKeyFive", "testKeyFiveAndAHalf"];
+
+function getValue(arr, obj) {
+  const [first, ...rest] = arr;
+  return typeof obj[first] === "object" ? getValue(rest, obj[first]) : obj[first];
+}
+
+console.log(getValue(array, obj));
