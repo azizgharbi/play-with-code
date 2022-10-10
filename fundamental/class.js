@@ -1,27 +1,27 @@
 class animalsClass {
-  constructor(voice) {
-    this.voice = voice;
-  }
+    constructor(voice) {
+        this.voice = voice;
+    }
 
-  getVoice() {
-    console.log("My voice is: " + this.voice);
-  }
+    getVoice() {
+        console.log('My voice is: ' + this.voice);
+    }
 }
 
 class happyAnimalsClass extends animalsClass {
-  constructor(happyVoice, voice) {
-    super(voice);
-    this.happyVoice = happyVoice;
-  }
+    constructor(happyVoice, voice) {
+        super(voice);
+        this.happyVoice = happyVoice;
+    }
 
-  getHappyVoice() {
-    console.log("Your happy voice is: " + this.happyVoice);
-  }
+    getHappyVoice() {
+        console.log('Your happy voice is: ' + this.happyVoice);
+    }
 }
 
-const dog = new animalsClass("hop hop");
+const dog = new animalsClass('hop hop');
 
-const happyDog = new happyAnimalsClass("happy hop hop", "not a hapy voice");
+const happyDog = new happyAnimalsClass('happy hop hop', 'not a hapy voice');
 
 happyDog.getVoice();
 
