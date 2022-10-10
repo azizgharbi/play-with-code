@@ -17,3 +17,4 @@ function fbr(x, y, n, arr = [x, y], i = 2) {
 }
 
 console.log(fbr(10, 20, 5));
+console.log(fb(10, 20, 5));
