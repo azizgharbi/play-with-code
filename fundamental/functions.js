@@ -1,5 +1,5 @@
 const x = {
-    val: 8,
+  val: 8,
 };
 
 const z = (x) => Object.assign({}, x, { val: x.val + 1 });

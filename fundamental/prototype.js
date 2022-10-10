@@ -1,10 +1,10 @@
 const person = {
-    init: function (name) {
-        this.name = name;
-    },
-    myName: function () {
-        console.log('My name is: ' + this.name);
-    },
+  init: function (name) {
+    this.name = name;
+  },
+  myName: function () {
+    console.log('My name is: ' + this.name);
+  },
 };
 
 const aziz = Object.create(person);
@@ -22,7 +22,7 @@ dave.init('David');
 //aron.init("Aron");
 
 dave.myName = function () {
-    console.log('OHHH REALLY OMG ' + this.name);
+  console.log('OHHH REALLY OMG ' + this.name);
 };
 
 aziz.myName();

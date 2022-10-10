@@ -7,7 +7,7 @@ const NewArrayToString = NewArray.join('*');
 var array = [1, 5, 5, 4, 8];
 
 var isThereAnyTwo = function (element) {
-    return element === 2;
+  return element === 2;
 };
 
 const test = 'aziz,kakakaka,kakakak';
@@ -15,11 +15,11 @@ const test = 'aziz,kakakaka,kakakak';
 const hello = test.split(',');
 
 hello.forEach(function (el, value) {
-    //console.log(el + value);
+  //console.log(el + value);
 });
 
 for (let index = 0; index < hello.length; index++) {
-    //console.log("can we " + hello[index]);
+  //console.log("can we " + hello[index]);
 }
 
 //console.log("apple,cherry,coco".split(",").map(el => el + " < 3 ").join("+ ").concat(" = fruits".concat(" love".toUpperCase())));
