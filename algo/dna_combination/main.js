@@ -2,7 +2,6 @@ function combination(a, b) {
   let i = 0;
   j = 0;
   array_of_combination = [];
-
   for (i; i < a.length; i++) {
     for (j; j < b.length; j++) {
       array_of_combination.push({ left: a[i], right: b[j] });
