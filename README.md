@@ -1,8 +1,15 @@
-## Me having fun:
 
-![Hot dog](/images/fast_food.png){style="display: block; margin: 0 auto" }
 
-First of all, Don't judge this code it's always the moment to make mistake and learn.
+<h3>Hello :vulcan_salute: ;</h3>
 
-- Playing with Javascript Typescript Go lua
-- Solving leetcode algorithms.
+<p align="center">
+   <img alt="Hot dog" src="/images/fast_food.png" />
+</p>
+
+<p>First of all, Don't judge this code. <b>It's me having fun</b></p>
+
+<ul>
+  <li>Playing with Javascript Typescript Go lua </li>
+  <li>Solving leetcode algorithms.</li>
+</ul>
+
