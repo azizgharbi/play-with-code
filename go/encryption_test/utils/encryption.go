@@ -13,8 +13,6 @@ func encryptionLogic(password string, keyTotal int) string {
 	for _, p := range password {
 		n_p := string(rune(int(p) + keyTotal))
 		is_lettre, _ := regexp.Compile(`[a-z]`)
-		//fmt.Println(is_lettre)
-
 		if is_lettre != nil && j%2 == 0 {
 			n_password += strings.ToUpper(n_p)
 		} else {
@@ -53,26 +51,20 @@ func keyTotal(key int) int {
 }
 
 func Encryption(password string, key int) (string, error) {
-
 	if key > 32 || key < 10 {
 		return "", errors.New("key should be between 10 and 32")
 	}
-
 	total := keyTotal(key)
 	n_password := encryptionLogic(password, total)
 
 	return n_password, nil
-
 }
 
 func Decryption(password string, key int) (string, error) {
-
 	if key > 32 || key < 10 {
 		return "", errors.New("key should be between 10 and 32")
 	}
-
 	total := keyTotal(key)
 	n_password := decryptionLogic(password, total)
-
 	return n_password, nil
 }
