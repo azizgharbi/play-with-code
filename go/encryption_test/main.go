@@ -12,12 +12,10 @@ func main() {
 		fmt.Println("[ERROR:]", err)
 	}
 	fmt.Println("[NEW_PASSWORD]", password)
-
 	old_password, err := utils.Decryption(password, 23)
 	if err != nil {
 		fmt.Println("[ERROR:]", err)
 	}
-
 	fmt.Println("[NEW_PASSWORD]", password)
 	fmt.Println("[NEW_PASSWORD]", old_password)
 }

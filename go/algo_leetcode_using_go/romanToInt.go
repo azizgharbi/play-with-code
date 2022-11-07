@@ -21,13 +21,10 @@ func romanToInt(s string) int {
 		"CD": 400,
 		"CM": 900,
 	}
-
 	if len(s) == 1 {
 		return dic[s]
 	}
-
 	var i int = 0
-
 	for i <= len(s)-1 {
 		if i == len(s)-1 {
 			return count + dic[string(s[i])]
@@ -46,5 +43,4 @@ func romanToInt(s string) int {
 
 func main() {
 	fmt.Println(romanToInt("MI"))
-
 }
