@@ -1,4 +1,4 @@
-## Me having fun;
+## Me having fun:
 
-- Playing with javascript typescript.
-- Solving algorithms.
+- Playing with Javascript Typescript Go lua
+- Solving leetcode algorithms.

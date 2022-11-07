@@ -32,7 +32,6 @@ function getCombination(dna) {
   console.log(dna_extension);
   for (let i = 0; i < dna_extension.length; i++) {
     for (let j = i; j < dna_extension.length - 1; j++) {
-      // console.log(i,dna_extension[i], j + 1, dna_extension[j + 1])
       console.log(
         combination(data[dna_extension[i]], data[dna_extension[j + 1]]),
       );
