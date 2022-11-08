@@ -14,25 +14,8 @@ import (
 )
 
 func maximum69Number(num int) int {
-	if num == 9999 || num == 9996 {
-		return 9999
-	}
-
-	if num == 999 || num == 996 {
-		return 999
-	}
-
-	if num == 99 || num == 96 {
-		return 99
-	}
-
-	if num == 6 || num == 9 {
-		return 9
-	}
-
-	var n, max int
 	var numString []string = strings.Split(strconv.Itoa(num), "")
-
+	var n, max int
 	for i := 0; i <= len(numString)-1; i++ {
 
 		if numString[i] == "9" {
