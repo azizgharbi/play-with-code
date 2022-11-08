@@ -17,19 +17,15 @@ func maximum69Number(num int) int {
 	var numString []string = strings.Split(strconv.Itoa(num), "")
 	var n, max int
 	for i := 0; i <= len(numString)-1; i++ {
-
 		if numString[i] == "9" {
 			numString[i] = "6"
 		} else {
 			numString[i] = "9"
 		}
-
 		n, _ = strconv.Atoi(strings.Join(numString, ""))
-
 		if n > max {
 			max = n
 		}
-
 		numString = strings.Split(strconv.Itoa(num), "")
 	}
 	return max
