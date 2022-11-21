@@ -13,4 +13,4 @@
   <li>Solving leetcode algorithms.</li>
 </ul>
 
-<a href="https://cassidoo.co/newsletter/"> Cassido newsletter, if you curious! </a>
+<a href="https://cassidoo.co/newsletter/"> Cassido newsletter, if you're curious! </a>
