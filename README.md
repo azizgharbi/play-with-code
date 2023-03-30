@@ -6,7 +6,7 @@
    <img alt="Hot dog" src="/images/fast_food.png" />
 </p>
 
-<p>First of all, Don't judge this code. because no one cares about this!</p>
+<p>First of all, Don't judge this code. because no one cares about</p>
 
 <ul>
   <li>Playing with Javascript Typescript Go lua </li>
